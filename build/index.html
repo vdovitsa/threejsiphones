@@ -90,7 +90,7 @@
             }
 
             {
-                const light = new THREE.DirectionalLight(0x000000, 1)
+                const light = new THREE.DirectionalLight(0xFF005C, 20)
                 light.position.set(2, 0, 5)
                 light.lookAt(0, 1, 0)
                 scene.add(light)
@@ -101,12 +101,12 @@
             }
 
             RectAreaLightUniformsLib.init();
-            {
-                const rectLight = new THREE.RectAreaLight(0x00D1FF, 1, 100, 100);
-                rectLight.position.set(-10,0,0)
-                rectLight.rotation.y = Math.PI + Math.PI/4;
-                scene.add(rectLight)
-            }
+            // {
+            // //     const rectLight = new THREE.RectAreaLight(0x00, 1, 100, 100);
+            // //     rectLight.position.set(-10,0,0)
+            // //     rectLight.rotation.y = Math.PI + Math.PI/4;
+            // //     scene.add(rectLight)
+            // // }
 
             {
                 const rectLight = new THREE.RectAreaLight(0xffffff, 1, 100, 100);
